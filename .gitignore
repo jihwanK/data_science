@@ -1,6 +1,28 @@
+# Created by https://www.gitignore.io/api/vim,linux,macos,python,windows,database,sublimetext,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=vim,linux,macos,python,windows,database,sublimetext,visualstudiocode
 
-# Created by https://www.gitignore.io/api/r,macos,python,windows,sublimetext,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=r,macos,python,windows,sublimetext,visualstudiocode
+### Database ###
+*.accdb
+*.db
+*.dbf
+*.mdb
+*.pdb
+*.sqlite3
+
+### Linux ###
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
 
 ### macOS ###
 # General
@@ -156,48 +178,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-### R ###
-# History files
-.Rhistory
-.Rapp.history
-
-# Session Data files
-.RData
-
-# User-specific files
-.Ruserdata
-
-# Example code in package build process
-*-Ex.R
-
-# Output files from R CMD build
-/*.tar.gz
-
-# Output files from R CMD check
-/*.Rcheck/
-
-# RStudio files
-.Rproj.user/
-
-# produced vignettes
-vignettes/*.html
-vignettes/*.pdf
-
-# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
-.httr-oauth
-
-# knitr and R markdown default cache directories
-*_cache/
-/cache/
-
-# Temporary files created by R markdown
-*.utf8.md
-*.knit.md
-
-### R.Bookdown Stack ###
-# R package: bookdown caching files
-/*_files/
-
 ### SublimeText ###
 # Cache files for Sublime Text
 *.tmlanguage.cache
@@ -229,6 +209,25 @@ bh_unicode_properties.cache
 # Sublime-github package stores a github token in this file
 # https://packagecontrol.io/packages/sublime-github
 GitHub.sublime-settings
+
+### Vim ###
+# Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
 
 ### VisualStudioCode ###
 .vscode/*
@@ -267,4 +266,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/r,macos,python,windows,sublimetext,visualstudiocode
+# End of https://www.gitignore.io/api/vim,linux,macos,python,windows,database,sublimetext,visualstudiocode

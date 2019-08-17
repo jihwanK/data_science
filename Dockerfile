@@ -7,15 +7,14 @@
 FROM mysql:latest AS jihwanK/
 
 
-# apt update and install
+# update apt
 RUN apt update
-RUN apt install -y git
-RUN apt install -y vim
-RUN apt install -y python3
-RUN apt install -y python3-pip
+
+# install software
+RUN apt install -y git vim python3 python3-pip wget
 
 # make new directory
-RUN mkdir /root/yelp
+RUN mkdir -p /root/yelp
 
 # git
 RUN git clone https://github.com/jihwanK/data_science.git
