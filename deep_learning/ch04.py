@@ -38,6 +38,16 @@ def numerical_gradient(f, x):
 	return grad
 
 
-print(numerical_gradient(function_2, np.array([3.0, 4.0])))
-print(numerical_gradient(function_2, np.array([0.0, 2.0])))
-print(numerical_gradient(function_2, np.array([3.0, 0.0])))
+def gradient_descent(f, init_x, lr=0.1, step_num=100):
+	x = init_x
+
+	for i in range(step_num):
+		grad = numerical_gradient(f, x)
+		x -= lr * grad
+	return x
+
+# print(numerical_gradient(function_2, np.array([3.0, 4.0])))
+# print(numerical_gradient(function_2, np.array([0.0, 2.0])))
+# print(numerical_gradient(function_2, np.array([3.0, 0.0])))
+print(gradient_descent(function_2, np.array([-3.0, 4.0])))
+# print(numerical_gradient(function_2, np.array([3.0, 0.0])))

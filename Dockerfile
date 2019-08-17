@@ -4,13 +4,14 @@
 # Email: super.jihwan@gmail.com
 
 
-FROM mysql:latest AS jihwanK/
+# FROM mysql:latest
+FROM ubuntu:latest
 
 
 # update apt
 RUN apt update
 
-# install software
+# install softwares
 RUN apt install -y git vim python3 python3-pip wget
 
 # make new directory
