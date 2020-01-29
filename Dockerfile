@@ -11,9 +11,11 @@ RUN apt update
 
 # install softwares
 RUN apt install -y git vim python3 python3-pip wget
+RUN pip3 install numpy pandas matplotlib
 
 # Add User
 RUN useradd jihwan -md /home/jihwan -s /bin/bash -p jihwan
+RUN usermod -aG sudo jihwan
 USER jihwan
 
 # WORKDIR (directory that CMD runs)
