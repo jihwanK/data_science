@@ -267,3 +267,7 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/vim,linux,macos,python,windows,database,sublimetext,visualstudiocode
+
+
+## personalised ignore option ##
+dataset
