@@ -4,8 +4,6 @@ import matplotlib
 import numpy as np
 import pandas as pd
 
-
-
 def prepare_country_stats(oecd_bli, gdp_per_capita):
     oecd_bli = oecd_bli[oecd_bli["INEQUALITY"]=="TOT"]
     oecd_bli = oecd_bli.pivot(index="Country", columns="Indicator", values="Value")
