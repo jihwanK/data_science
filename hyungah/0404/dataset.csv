@@ -1,4 +1,4 @@
-date,Usage_power_total,product_1,product_2,product_total,temp,humid
+date,usage_power,product_1,product_2,product_total,temp,humid
 2017-01-01,"6,095.70",0,0,0,1.1,73
 2017-01-02,"9,962.15",19399.4,1411,20810.4,2.5,67
 2017-01-03,"11,196.00",20456.6,1802,22258.6,4.1,56
